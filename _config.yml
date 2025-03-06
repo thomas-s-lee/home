@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Thomas S. Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/Thomas_Lee_Photo_v.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Financial Economist"
   # location         : "Somewhere"
   email            :
