@@ -114,17 +114,17 @@ analytics:
 # Site Author
 author:
   name             : "Thomas S. Lee"
-  avatar           : "/assets/Thomas_Lee_Photo_v.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/Thomas_Lee_Photo_v.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Financial Economist"
   # location         : "Somewhere"
-  email            : "mailto:leethomas0182@gmail.com"
+  email            : "leethomas0182@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:leethomas0182@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      # URL: "https://www.linkedin.com/in/thomasleefin"
+       url: "https://www.linkedin.com/in/thomasleefin"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
