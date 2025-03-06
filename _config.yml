@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Thomas S. Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Thomas S. Lee"
@@ -113,15 +113,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Thomas S. Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Financial Economist"
+  # location         : "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:leethomas0182@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      URL: "https://www.linkedin.com/in/thomasleefin"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
