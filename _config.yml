@@ -121,10 +121,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:leethomas0182@gmail.com"
+      # url: "mailto:leethomas0182@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      URL: "https://www.linkedin.com/in/thomasleefin"
+      # URL: "https://www.linkedin.com/in/thomasleefin"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
