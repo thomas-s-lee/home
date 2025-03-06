@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "About Me"
-permalink: /about/
+title: "Projects"
+permalink: /projects/
 ---
 This is my about page!
