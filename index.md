@@ -1,8 +1,9 @@
 ---
 layout: home
-title: Welcome!
 author_profile: true
 ---
+
+## Welcome!
 
 I am a Ph.D. candidate in Finance at the University of Texas at Austin, McCombs School of Business. 
 
