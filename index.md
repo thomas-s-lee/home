@@ -3,6 +3,7 @@ layout: home
 title: "Home"
 author_profile: true
 entries_layout: none
+masthead_title: " "
 ---
 
 # Welcome!
