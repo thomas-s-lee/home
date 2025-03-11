@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 entries_layout: none
 header:
-  overlay_image: /portfolio/assets/images/banner.jpg
+  overlay_image: /portfolio/assets/images/banner.JPG
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 title: "Welcome!"
 ---
