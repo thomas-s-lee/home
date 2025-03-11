@@ -3,8 +3,10 @@ layout: single
 title: "Welcome!"
 author_profile: true
 entries_layout: none
+header:
+  overlay_image: /assets/images/banner.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
-![Banner Image](/assets/images/banner.jpg){: .full-width}
 
 I am a Ph.D. candidate in Finance at the University of Texas at Austin, McCombs School of Business. 
 
