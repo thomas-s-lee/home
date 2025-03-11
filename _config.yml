@@ -116,7 +116,7 @@ author:
   name             : "Thomas S. Lee"
   avatar           : "/assets/images/Thomas_Lee_Photo_v.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Financial Economist"
-  location         : "PhD in Finance, University of Texas at Austin"
+  location         : "PhD in Finance, UT-Austin"
       icon: "fas fa-fw fa-solid fa-graduation-cap"
   # email            : "leethomas0182@gmail.com"
   links:
@@ -124,7 +124,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:leethomas0182@gmail.com"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/thomasleefin"
     - label: "Website"
       icon: "fas fa-fw fa-link"
