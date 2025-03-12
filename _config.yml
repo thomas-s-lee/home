@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Thomas S. Lee"
   avatar           : "/assets/images/Thomas_Lee_Photo_v.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD in Finance, UT-Austin"
+  bio              : "PhD in Finance @ UT-Austin"
   location         : "Austin, TX"
   # email            : "leethomas0182@gmail.com"
   links:
