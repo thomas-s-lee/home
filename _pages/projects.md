@@ -34,5 +34,5 @@ Attendance rates improved by 0.12 percentage points.
 Small but positive effects on college entrance exam participation (+1.3 p.p.) and college enrollment (+0.9 p.p.).
 Early-career earnings increased by ~2% per year for non-college-educated students
 
-## [Read more](https://lshyun92.github.io/files/JMP.pdf)
+## [Read more](https://thomas-s-lee.github.io/files/JMP.pdf)
 
