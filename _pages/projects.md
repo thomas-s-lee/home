@@ -4,7 +4,7 @@ title: ""
 permalink: /projects/
 ---
 # The Real Effects of Debt Relief on Education Outcomes
-![Estimated Effects Over Time](home/assets/images/result_sub_pct_m_std_cf.png)
+![Estimated Effects Over Time](../assets/images/result_sub_pct_m_std_cf.png)
 ## Overview
 This project looks at whether upgrading school buildings—like fixing old classrooms or building new facilities—helps students do better in school and later in life. I study a program in Texas where the state helped certain school districts pay off their debt, which made it easier for them to spend money on big improvement projects. The results show that when schools were able to invest more in their buildings, students had better test scores, were more likely to graduate, and even earned more in their early careers. This matters because it shows that helping debt-strapped schools with their debt can lead to real improvements in students’ lives—not just nicer buildings, but better chances at success.
 
