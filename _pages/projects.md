@@ -3,6 +3,93 @@ layout: single
 title: "Projects"
 permalink: /projects/
 ---
+# 🏫 The Real Effects of Debt Relief on Education Outcomes
+
+## 📌 Overview
+This project evaluates the long-term impact of capital investments in school infrastructure on student performance and labor market outcomes. I analyze a quasi-natural experiment in Texas, where state programs subsidized school district debt payments, providing exogenous variation in capital spending.
+
+---
+
+## 🎯 Objectives
+
+- Determine whether increased capital investment improves student outcomes.
+- Use causal inference techniques to identify long-term effects.
+- Quantify educational and economic impacts of state-level debt support.
+
+---
+
+## 🧩 Data Sources
+
+- **Texas Education Agency (TEA)** – Student-level K-12 data (1993–2011)
+- **Texas Higher Education Coordinating Board (THECB)** – College outcomes
+- **National Center for Education Statistics (NCES)** – School finances
+- **Academic Excellence Indicator System (AEIS)** – District demographics and performance
+- **U.S. Census (1990 & 2000)** – Socioeconomic controls
+
+> Dataset includes 870 Texas school districts, with longitudinal student and financial records across more than a decade.
+
+---
+
+## 🛠️ Tools & Techniques
+
+- **Languages**: Python, Stata, SQL
+- **Libraries**: pandas, numpy, matplotlib, statsmodels
+- **Methods**:
+  - Two-stage least squares (2SLS)
+  - Fixed effects panel regression
+  - Difference-in-differences
+  - Policy-based instrumental variable design
+- **Data Engineering**:
+  - Merging and cleaning multi-source administrative data
+  - Imputing policy eligibility from funding formulas
+  - Standardizing scores and constructing derived metrics
+
+---
+
+## 🧪 Methodology
+
+### Step 1: Instrumental Variable Construction
+
+- **Instrument**: `DTL_High × Post`
+- DTL_High: High pre-policy debt-to-property-tax-levy ratio (1987–1991)
+- Post: Indicator for post-policy period (1998 onward)
+- Motivation: Districts with high pre-existing debt burdens are more likely to benefit from state subsidies
+
+### Step 2: 2SLS Regression
+
+- **First Stage**:  
+  Capital spending instrumented using policy interaction  
+  `Cap_{i,t} = π(DTL_High × Post) + controls + FE + ε`
+
+- **Second Stage**:  
+  Estimate impact of capital on outcomes  
+  `Ȳ_{i,t} = β × Ĉap_{i,t} + controls + FE + u`
+
+- **Outcomes Measured**:
+  - Standardized test scores (reading & math)
+  - Graduation & attendance rates
+  - College enrollment & exam participation
+  - Early-career income (ages 24–26)
+
+---
+
+## 📊 Key Results
+
+| Outcome | Effect per $1,000 per pupil | Significance |
+|--------|-----------------------------|--------------|
+| Math test scores | +0.12 SD | ✅ Significant |
+| Reading test scores | +0.06 SD | ✅ Significant |
+| Graduation rate | +1.9 percentage points | ✅ Significant |
+| Attendance rate | +0.12 percentage points | ✅ Significant |
+| College enrollment | +0.9 percentage points | Not statistically significant |
+| Early-career earnings | +2% (non-college grads) | ✅ Significant (delayed effect) |
+
+---
+
+## 📁 Repository Structure
+
+
+
 # Investing in Schools: How Debt Relief Helps Students Succeed through Better Facilities
 
 ## Summary
