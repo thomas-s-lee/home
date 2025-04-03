@@ -1,12 +1,12 @@
 ---
 layout: single
-title: "Projects"
+title: ""
 permalink: /projects/
 ---
 # The Real Effects of Debt Relief on Education Outcomes
 
 ## Overview
-This project evaluates the long-term impact of capital investments in school infrastructure on student performance and early labor market outcomes. I analyze a quasi-natural experiment in Texas, where state programs subsidized school district debt payments—providing exogenous variation in capital spending, especially for debt-constrained districts. The results show that increased capital spending led to higher test scores, improved graduation rates, and modest gains in early-career earnings.
+This project looks at whether upgrading school buildings—like fixing old classrooms or building new facilities—helps students do better in school and later in life. I study a program in Texas where the state helped certain school districts pay off their debt, which made it easier for them to spend money on big improvement projects. The results show that when schools were able to invest more in their buildings, students had better test scores, were more likely to graduate, and even earned more in their early careers. This matters because it shows that helping debt-strapped schools with their debt can lead to real improvements in students’ lives—not just nicer buildings, but better chances at success.
 
 ---
 
@@ -20,8 +20,8 @@ This project evaluates the long-term impact of capital investments in school inf
 
 - **Texas Education Agency (TEA)** – Student-level K-12 data
 - **Texas Higher Education Coordinating Board (THECB)** – College outcomes
-- **National Center for Education Statistics (NCES)** – School finances
-- **Academic Excellence Indicator System (AEIS)** – District demographics and performance
+- **National Center for Education Statistics (NCES)** – School finances across the U.S.
+- **Academic Excellence Indicator System (AEIS)** – District demographics and performance in Texas
 - **U.S. Census (1990 & 2000)** – Socioeconomic controls
 
 ---
@@ -45,24 +45,32 @@ This project evaluates the long-term impact of capital investments in school inf
 To isolate the causal effect of capital investment, I use an instrumental variable strategy. This is necessary because wealthier districts can both afford more capital spending and achieve better outcomes for reasons unrelated to infrastructure, creating endogeneity concerns in naïve comparisons.
 
 - **Instrument**: `DTL_High × Post`
-- DTL_High: High pre-policy debt-to-property-tax-levy ratio (1987–1991)
-- Post: Indicator for post-policy period (1998 onward)
-- Motivation: Districts with high pre-existing debt burdens are more likely to benefit from state subsidies, 
+- `DTL_High`: High pre-policy debt-to-property-tax-levy ratio (1987–1991)
+- `Post`: Indicator for post-policy period (1998 onward)
+- Motivation: Districts with high levels of existing debt were more likely to qualify for and benefit from state subsidies, which gave them room to increase capital investment in their school facilities.
 
-### Step 2: 2SLS Regression
+### Step 2: Estimation
 
 - **First Stage**:  
   Capital spending instrumented using policy interaction  
   `Cap_{i,t} = π(DTL_High × Post) + controls + FE + ε`
-
+  - `Cap_{i,t}`: Capital spending per pupil in district i at year t (3-year cumulative total)
+  - `DTL_High_i`: Indicator for districts with above-median debt-to-tax levy ratio before the policy
+  - `Post_t`: Indicator for post-policy years (1998 and later)
+  - controls: Observable, time-varying district characteristics (e.g., current spending, cash holdings)
+  - FE: District, year fixed effects
+  
 - **Second Stage**:  
   Estimate impact of capital on outcomes  
   `Ȳ_{i,t} = β × Ĉap_{i,t} + controls + FE + u`
+  - \bar{Y}_{i,t}: Average educational or labor market outcome for district i following year t
+  - \hat{Cap}_{i,t}: Predicted capital spending from the first stage
+  - β: Coefficient of interest—the causal effect of capital investment
 
 - **Outcomes Measured**:
   - Standardized test scores (reading & math)
   - Graduation & attendance rates
-  - College enrollment & exam participation
+  - College enrollment & exam participation rates
   - Early-career income (ages 24–26)
 
 ---
@@ -76,44 +84,9 @@ To isolate the causal effect of capital investment, I use an instrumental variab
 | Graduation rate | +1.9 percentage points | ✅ Significant |
 | Attendance rate | +0.12 percentage points | ✅ Significant |
 | College enrollment | +0.9 percentage points | Not statistically significant |
-| Early-career earnings | +2% (non-college grads) | ✅ Significant (delayed effect) |
+| Early-career earnings | +2% (non-college grads) | ✅ Significant |
 
 ---
-
-## 📁 Repository Structure
-
-
-
-# Investing in Schools: How Debt Relief Helps Students Succeed through Better Facilities
-
-## Summary
-This study examines how capital spending affects educational outcomes in debt-laden school districts. Using a quasi-natural experiment with Texas debt relief programs, I find that state-supported infrastructure investments significantly improve student performance and graduation rates. The results highlight the long-term benefits of financial intervention in school districts with limited debt capacity.
-
-## Problem Statement
-How does capital spending in debt-laden school districts impact educational outcomes?
-
-## Data Sources
-- Texas Education Agency (TEA): K-12 individual student outcomes and school district finances.
-- Texas Higher Education Coordinating Board (THECB): College enrollment data.
-- National Center for Education Statistics (NCES): School district income statement information.
-- U.S. Census Data – Local economic indicators.
-
-## Methodology
-
-## Key Findings
-1. Impact of Debt Relief on Capital Spending
-- Debt relief programs increased capital spending by $570 per student (+22% over 3 years).
-
-2. Educational Outcomes
-- Test Scores:
-A $1,000 increase per pupil in capital spending raised 8th-grade reading scores by 0.06 and math scores by 0.12 standard deviations.
-Effects were delayed but long-lasting, with gains materializing 5+ years post-investment.
-- Graduation & Attendance:
-Graduation rates increased by 1.9 percentage points.
-Attendance rates improved by 0.12 percentage points.
-- College & Labor Market Outcomes:
-Small but positive effects on college entrance exam participation (+1.3 p.p.) and college enrollment (+0.9 p.p.).
-Early-career earnings increased by ~2% per year for non-college-educated students
 
 ## [Read more](https://thomas-s-lee.github.io/files/JMP.pdf)
 
