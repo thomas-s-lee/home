@@ -3,42 +3,35 @@ layout: single
 title: "Projects"
 permalink: /projects/
 ---
-# 🏫 The Real Effects of Debt Relief on Education Outcomes
+# The Real Effects of Debt Relief on Education Outcomes
 
-## 📌 Overview
-This project evaluates the long-term impact of capital investments in school infrastructure on student performance and labor market outcomes. I analyze a quasi-natural experiment in Texas, where state programs subsidized school district debt payments, providing exogenous variation in capital spending.
-
----
-
-## 🎯 Objectives
-
-- Determine whether increased capital investment improves student outcomes.
-- Use causal inference techniques to identify long-term effects.
-- Quantify educational and economic impacts of state-level debt support.
+## Overview
+This project evaluates the long-term impact of capital investments in school infrastructure on student performance and early labor market outcomes. I analyze a quasi-natural experiment in Texas, where state programs subsidized school district debt payments—providing exogenous variation in capital spending, especially for debt-constrained districts. The results show that increased capital spending led to higher test scores, improved graduation rates, and modest gains in early-career earnings.
 
 ---
 
-## 🧩 Data Sources
+## Objectives
+- Examine whether increased capital investment improves student outcomes.
+- Focus on the effects of marginal capital projects initiated by heavily indebted school districts, where funding constraints are most binding.
 
-- **Texas Education Agency (TEA)** – Student-level K-12 data (1993–2011)
+---
+
+## Data Sources
+
+- **Texas Education Agency (TEA)** – Student-level K-12 data
 - **Texas Higher Education Coordinating Board (THECB)** – College outcomes
 - **National Center for Education Statistics (NCES)** – School finances
 - **Academic Excellence Indicator System (AEIS)** – District demographics and performance
 - **U.S. Census (1990 & 2000)** – Socioeconomic controls
 
-> Dataset includes 870 Texas school districts, with longitudinal student and financial records across more than a decade.
-
 ---
 
-## 🛠️ Tools & Techniques
+## Tools & Techniques
 
-- **Languages**: Python, Stata, SQL
-- **Libraries**: pandas, numpy, matplotlib, statsmodels
+- **Languages**: Python, Stata
 - **Methods**:
   - Two-stage least squares (2SLS)
-  - Fixed effects panel regression
   - Difference-in-differences
-  - Policy-based instrumental variable design
 - **Data Engineering**:
   - Merging and cleaning multi-source administrative data
   - Imputing policy eligibility from funding formulas
@@ -46,14 +39,15 @@ This project evaluates the long-term impact of capital investments in school inf
 
 ---
 
-## 🧪 Methodology
+## Methodology - Instrumental Variable
 
 ### Step 1: Instrumental Variable Construction
+To isolate the causal effect of capital investment, I use an instrumental variable strategy. This is necessary because wealthier districts can both afford more capital spending and achieve better outcomes for reasons unrelated to infrastructure, creating endogeneity concerns in naïve comparisons.
 
 - **Instrument**: `DTL_High × Post`
 - DTL_High: High pre-policy debt-to-property-tax-levy ratio (1987–1991)
 - Post: Indicator for post-policy period (1998 onward)
-- Motivation: Districts with high pre-existing debt burdens are more likely to benefit from state subsidies
+- Motivation: Districts with high pre-existing debt burdens are more likely to benefit from state subsidies, 
 
 ### Step 2: 2SLS Regression
 
