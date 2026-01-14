@@ -9,9 +9,9 @@ title: ""
 
 # Welcome!
 
-I am a Ph.D. candidate in Finance at the University of Texas at Austin, McCombs School of Business. 
+I am an applied economist specializing in data science and empirical finance research.
 
-My primary research area is empirical corporate finance, with a particular emphasis on municipal and public finance. I also have a strong interest in institutional investors and financial intermediation.
+I received a Ph.D. in finance from the University of Texas at Austin.
 
 You can find my resume [here](https://thomas-s-lee.github.io/home/assets/files/Thomas_Lee_Resume.pdf).
 
