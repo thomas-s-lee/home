@@ -2,8 +2,7 @@
 layout: single
 author_profile: true
 entries_layout: none
-header:
-  overlay_image: /assets/images/banner.png
+
 title: ""
 ---
 
